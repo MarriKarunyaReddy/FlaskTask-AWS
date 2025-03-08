@@ -27,13 +27,15 @@ sudo yum update -y
 sudo yum install git python3-pip mysql57 -y
 ```
 
-### 3️⃣ **Clone the Repository & Set Up Virtual Environment**
+### 3️⃣ **Clone the Repository & Set Up Virtual Environment & Install Python Dependencies**
 ```bash
 git clone https://github.com/MarriKarunyaReddy/FlaskTask-AWS.git
 cd FlaskTask-AWS
 python3 -m venv venv
 source venv/bin/activate
-pip install -r requirements.txt
+pip3 install flask
+pip3 install flask-mysql
+pip3 install pymysql
 ```
 
 ### 4️⃣ **Set Up MySQL RDS Database**
