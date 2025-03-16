@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 # Connect to MySQL RDS
 db = pymysql.connect(
-    host="todo-db.c8xey088gtyu.us-east-1.rds.amazonaws.com",
+    host="<RDS-ENDPOINT>",
     user="admin",
     password="adminpassword",
     database="todo_db"
